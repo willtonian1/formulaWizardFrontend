@@ -1,6 +1,4 @@
 
-
-
 axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 
     console.log(resp.data);
