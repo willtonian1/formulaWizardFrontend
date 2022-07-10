@@ -14,24 +14,27 @@
   <script src="script.js"></script>
 
 	
-
+<div id = "input_Section">
 	<input type="text" id="myText" value="Car name...">
 
 
 		<input type="text" id="myYear" value="Year...">
 	<button onclick="doPostRequest()"> DO IT</button>
 
+</div>
+
+	
 	<div id="results_container">
 
 		<div>
 			<p id="name1"></p>
-			<button id="button1">Choose</button>
+			<button id="button1" onclick="vote_One()">Choose</button>
 		</div>
 
 
 		<div>
 			<p id="name2"></p>
-			<button id="button2">Choose</button>
+			<button id="button2" onclick="vote_Two()">Choose</button>
 		</div>
 
 
