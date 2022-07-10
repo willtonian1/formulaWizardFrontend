@@ -9,7 +9,7 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 	dataList = data3.split("},")
 	//console.log(dataList)
 
-	let elements_List = []
+	elements_List = []
 
 	for (let i = 0; i < dataList.length; i++ )  {
 
@@ -61,17 +61,17 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 };
 
-var elements_List
 function vote_One(){
-	console.log(elements_List)
-	let name = document.getElementById("name1").value;
-	
-	//for (let e = 0; e < elements_List.length; e++){
-		//if (name = elements_List[e][1]){
-			//axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', name);
+	//console.log(elements_List)
+	let name = document.getElementById("name1").innerHTML;
+	n_2 = name.replace("\'name\:'", "")	
+	insert_payload = {name: String(n_2)}
+	for (let e = 0; e < elements_List.length; e++){
+		if (name == elements_List[e][1]){
+			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
 
-	//	}
-//	}
+		}
+	}
 };
 
 function vote_Two(){
