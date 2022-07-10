@@ -64,8 +64,11 @@ function getRandomInt(min, max) {
 function vote_One(){
 	//console.log(elements_List)
 	let name = document.getElementById("name1").innerHTML;
-	n_2 = name.replace("\'name\:'", "")	
-	insert_payload = {name: String(n_2)}
+	n_2 = name.replace(/'/g, "")	
+	n_3 = n_2.replace('name: ', "")
+	n_4 = n_3.replace(" ", "")
+	console.log(n_4)
+	insert_payload = {name:String(n_3)}
 	for (let e = 0; e < elements_List.length; e++){
 		if (name == elements_List[e][1]){
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
@@ -75,5 +78,17 @@ function vote_One(){
 };
 
 function vote_Two(){
+	let name = document.getElementById("name2").innerHTML;
+n_2 = name.replace(/'/g, "")	
+	n_3 = n_2.replace('name: ', "")
+	n_4 = n_3.replace(" ", "")
+	console.log(n_4)
+	insert_payload = {name:String(n_3)}
+	for (let e = 0; e < elements_List.length; e++){
+		if (name == elements_List[e][1]){
+			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
+
+		}
+	}
 	
 };
