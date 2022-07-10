@@ -1,5 +1,5 @@
 
-
+function go(){
 axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 	data = resp.data;
    data2 = data.replace("[", "");
@@ -18,23 +18,31 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 		elements_List.push(newElement)
 		
 	}
-
-	console.log(elements_List)
 	
 	name1 = document.getElementById("name1")
 	num1 = getRandomInt(0,elements_List.length)
   name1.innerHTML = elements_List[num1][1]
 
-	name2 = document.getElementById("name2")
-	num2 = getRandomInt(0,elements_List.length)
+	votes1 = document.getElementById("votes1")
+votes1.innerHTML = elements_List[num1][4] 
+	
+name2 = document.getElementById("name2")
+num2 = getRandomInt(0,elements_List.length)
 	
 	while (num2 == num1){
 		num2 = getRandomInt(0,elements_List.length)
 	}
 	
-	name2. innerHTML = elements_List[num2][1]
-});
+	name2. innerHTML = elements_List[num2][1] 
+	
+	votes2 = document.getElementById("votes2")
+votes2.innerHTML = elements_List[num2][4];
 
+	
+});
+}
+
+go(); 
 var payload;
 
 function doPostRequest() {
@@ -72,7 +80,7 @@ function vote_One(){
 	for (let e = 0; e < elements_List.length; e++){
 		if (name == elements_List[e][1]){
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
-
+go();
 		}
 	}
 };
@@ -87,7 +95,7 @@ n_2 = name.replace(/'/g, "")
 	for (let e = 0; e < elements_List.length; e++){
 		if (name == elements_List[e][1]){
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
-
+go();
 		}
 	}
 	
