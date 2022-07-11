@@ -5,4 +5,14 @@ html, body {
 	color: white;
 }
 
-
+.results_container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items:center;
+	text-align: center;
+}
+.car_container{
+	display: inline-block;
+	margin-right: 20px;
+}
