@@ -31,7 +31,7 @@ votes1.innerHTML = elements_List[num1][4]
 	sstr2 = sstr1.replace("image", "")
 	sstr3 = sstr2.replace(/'/g, "")
 	sstr4 = sstr3.replace(" : ", "")
-	image2.src = "images/" + sstr4
+	image1.src = "images/" + sstr4
 
 	
 	
