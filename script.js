@@ -38,7 +38,12 @@ num2 = getRandomInt(0,elements_List.length)
 	votes2 = document.getElementById("votes2")
 votes2.innerHTML = elements_List[num2][4];
 
-	
+	image2 = document.getElementById("image2")
+	str1 = elements_List[num2][3]
+	str2 = str1.replace("image", "")
+	str3 = str2.replace(/'/g, "")
+	str4 = str3.replace(" : ", "")
+	image2.src = "images/" + str4
 });
 }
 
