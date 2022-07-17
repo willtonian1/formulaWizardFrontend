@@ -16,13 +16,16 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 		elements_List.push(newElement)
 		
 	}
+
+	
 	
 	name_html_1();
 
 	votes_html_1();
+	
 	image_src_1();
 
-	
+	//second inline
 	
 
 	name_html_2();
@@ -31,9 +34,11 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 
 	image_src_2();
 });
-}
+};
 
 go(); 
+
+
 var payload;
 
 function doPostRequest() {
@@ -49,10 +54,7 @@ function doPostRequest() {
 
  axios.post('https://Toms-Flask-App.193ftgw.repl.co', payload);
     console.log(payload);
-};
-
-
-
+};  //entering cars
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -62,34 +64,57 @@ function getRandomInt(min, max) {
 
 function vote_One(){
 	//console.log(elements_List)
-	let name = document.getElementById("name1").innerHTML;
-	n_2 = name.replace(/'/g, "")	
-	n_3 = n_2.replace('name: ', "")
-	n_4 = n_3.replace(" ", "")
-	console.log(n_4)
-	insert_payload = {name:String(n_3)}
+	let name = document.getElementById("image1").src;
+	console.log(name)
+
+	ayo = name.replace("https://142cee50-9b39-430b-bdbd-1080c5b92929.id.repl.co/images/","")
+	
+	let name10 = ayo.replace(".jpg", "")
+	insert_payload = {name:String(name10)}
+	console.log(insert_payload)
 	for (let e = 0; e < elements_List.length; e++){
-		if (name == elements_List[e][1]){
+		
+		ssstr1 = elements_List[e][3]
+
+		ssstr2 = ssstr1.replace("image", "")
+		ssstr3 = ssstr2.replace(/'/g, "")
+		ssstr4 = ssstr3.replace(" : ", "")
+		console.log(ssstr4)
+		console.log(ayo)
+		if (ayo == ssstr4){
+			console.log("yhh boo")
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
 go();
 		}
 	}
+
 };
 
 function vote_Two(){
-	let name = document.getElementById("name2").innerHTML;
-n_2 = name.replace(/'/g, "")	
-	n_3 = n_2.replace('name: ', "")
-	n_4 = n_3.replace(" ", "")
-	console.log(n_4)
-	insert_payload = {name:String(n_3)}
+	let name = document.getElementById("image2").src;
+	console.log(name)
+
+	ayo = name.replace("https://142cee50-9b39-430b-bdbd-1080c5b92929.id.repl.co/images/","")
+	
+	let name10 = ayo.replace(".jpg", "")
+	insert_payload = {name:String(name10)}
+	console.log(insert_payload)
 	for (let e = 0; e < elements_List.length; e++){
-		if (name == elements_List[e][1]){
+		
+		ssstr1 = elements_List[e][3]
+
+		ssstr2 = ssstr1.replace("image", "")
+		ssstr3 = ssstr2.replace(/'/g, "")
+		ssstr4 = ssstr3.replace(" : ", "")
+		console.log(ssstr4)
+		console.log(ayo)
+		if (ayo == ssstr4){
+			console.log("yhh boo")
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
 go();
 		}
 	}
-	
+
 };
 
 function name_html_1(){
@@ -100,7 +125,8 @@ function name_html_1(){
 	nom3 = nom2.replace(/'/g, "")
 	nom4 = nom3.replace(" : ", "")
   name1.innerHTML = "Name: " + nom4
-}
+};
+
 function name_html_2(){
 	name2 = document.getElementById("name2")
 	num2 = getRandomInt(0,elements_List.length)
@@ -116,7 +142,8 @@ function name_html_2(){
 	nomm4 = nomm3.replace(" : ", "")
   name2.innerHTML = "Name: " + nomm4
 
-}
+};
+
 function image_src_1(){
 	image1 = document.getElementById("image1")
 	sstr1 = elements_List[num1][3]
@@ -125,7 +152,7 @@ function image_src_1(){
 	sstr4 = sstr3.replace(" : ", "")
 	image1.src = "images/" + sstr4
 
-}
+};
 
 function image_src_2(){
 	image2 = document.getElementById("image2")
@@ -134,7 +161,7 @@ function image_src_2(){
 	str3 = str2.replace(/'/g, "")
 	str4 = str3.replace(" : ", "")
 	image2.src = "images/" + str4
-}
+};
 
 function votes_html_1(){
 	votes1 = document.getElementById("votes1")
@@ -144,7 +171,7 @@ function votes_html_1(){
 	vote3 = vote2.replace(" : ", "")
 	votes1.innerHTML = " Current Votes: " + vote3
 
-}
+};
 
 function votes_html_2(){
 	votes2 = document.getElementById("votes2")
@@ -153,4 +180,4 @@ function votes_html_2(){
 	vote23 = vote22.replace(" : ", "")
 	votes2.innerHTML = " Current Votes: " + vote23
 
-}
+};
