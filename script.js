@@ -17,33 +17,15 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 		
 	}
 	
-	name1 = document.getElementById("name1")
-	num1 = getRandomInt(0,elements_List.length)
-	nom = elements_List[num1][1]
-	nom2 = nom.replace("name","")
-	nom3 = nom2.replace(/'/g, "")
-	nom4 = nom3.replace(" : ", "")
-  name1.innerHTML = "Name: " + nom4
+	name_html_1();
 
 	votes_html_1();
 	image_src_1();
 
 	
 	
-name2 = document.getElementById("name2")
-num2 = getRandomInt(0,elements_List.length)
-	
-	while (num2 == num1){
-		num2 = getRandomInt(0,elements_List.length)
-	}
 
-	num2 = getRandomInt(0,elements_List.length)
-	nomm = elements_List[num2][1]
-	nomm2 = nomm.replace("name","")
-	nomm3 = nomm2.replace(/'/g, "")
-	nomm4 = nomm3.replace(" : ", "")
-  name2.innerHTML = "Name: " + nomm4
-
+	name_html_2();
 	
 	votes_html_2();
 
@@ -110,7 +92,31 @@ go();
 	
 };
 
+function name_html_1(){
+	name1 = document.getElementById("name1")
+	num1 = getRandomInt(0,elements_List.length)
+	nom = elements_List[num1][1]
+	nom2 = nom.replace("name","")
+	nom3 = nom2.replace(/'/g, "")
+	nom4 = nom3.replace(" : ", "")
+  name1.innerHTML = "Name: " + nom4
+}
+function name_html_2(){
+	name2 = document.getElementById("name2")
+	num2 = getRandomInt(0,elements_List.length)
+	
+	while (num2 == num1){
+		num2 = getRandomInt(0,elements_List.length)
+	}
 
+	num2 = getRandomInt(0,elements_List.length)
+	nomm = elements_List[num2][1]
+	nomm2 = nomm.replace("name","")
+	nomm3 = nomm2.replace(/'/g, "")
+	nomm4 = nomm3.replace(" : ", "")
+  name2.innerHTML = "Name: " + nomm4
+
+}
 function image_src_1(){
 	image1 = document.getElementById("image1")
 	sstr1 = elements_List[num1][3]
