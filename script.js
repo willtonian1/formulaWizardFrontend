@@ -24,7 +24,11 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
   name1.innerHTML = elements_List[num1][1]
 
 	votes1 = document.getElementById("votes1")
-votes1.innerHTML = elements_List[num1][4] 
+
+	vote1 = elements_List[num1][4].replace("votes", "")
+	vote2 = vote1.replace(/'/g, "")
+	vote3 = vote2.replace(" : ", "")
+	votes1.innerHTML = " Current Votes: " + vote3
 
 	image1 = document.getElementById("image1")
 	sstr1 = elements_List[num1][3]
@@ -45,7 +49,11 @@ num2 = getRandomInt(0,elements_List.length)
 	name2. innerHTML = elements_List[num2][1] 
 	
 	votes2 = document.getElementById("votes2")
-votes2.innerHTML = elements_List[num2][4];
+	vote21 = elements_List[num2][4].replace("votes", "")
+	vote22 = vote21.replace(/'/g, "")
+	vote23 = vote22.replace(" : ", "")
+	votes2.innerHTML = " Current Votes: " + vote23
+
 
 	image2 = document.getElementById("image2")
 	str1 = elements_List[num2][3]
