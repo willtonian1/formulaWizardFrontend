@@ -2,12 +2,10 @@
 function go(){
 axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 	data = resp.data;
-   data2 = data.replace("[", "");
-	 data3 = data2.replace("]", "");
-
+  data2 = data.replace("[", "");
+	data3 = data2.replace("]", "");
 
 	dataList = data3.split("},")
-	//console.log(dataList)
 
 	elements_List = []
 
@@ -21,21 +19,14 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 	
 	name1 = document.getElementById("name1")
 	num1 = getRandomInt(0,elements_List.length)
-  name1.innerHTML = elements_List[num1][1]
+	nom = elements_List[num1][1]
+	nom2 = nom.replace("name","")
+	nom3 = nom2.replace(/'/g, "")
+	nom4 = nom3.replace(" : ", "")
+  name1.innerHTML = "Name: " + nom4
 
-	votes1 = document.getElementById("votes1")
-
-	vote1 = elements_List[num1][4].replace("votes", "")
-	vote2 = vote1.replace(/'/g, "")
-	vote3 = vote2.replace(" : ", "")
-	votes1.innerHTML = " Current Votes: " + vote3
-
-	image1 = document.getElementById("image1")
-	sstr1 = elements_List[num1][3]
-	sstr2 = sstr1.replace("image", "")
-	sstr3 = sstr2.replace(/'/g, "")
-	sstr4 = sstr3.replace(" : ", "")
-	image1.src = "images/" + sstr4
+	votes_html_1();
+	image_src_1();
 
 	
 	
@@ -45,22 +36,18 @@ num2 = getRandomInt(0,elements_List.length)
 	while (num2 == num1){
 		num2 = getRandomInt(0,elements_List.length)
 	}
-	
-	name2. innerHTML = elements_List[num2][1] 
-	
-	votes2 = document.getElementById("votes2")
-	vote21 = elements_List[num2][4].replace("votes", "")
-	vote22 = vote21.replace(/'/g, "")
-	vote23 = vote22.replace(" : ", "")
-	votes2.innerHTML = " Current Votes: " + vote23
 
+	num2 = getRandomInt(0,elements_List.length)
+	nomm = elements_List[num2][1]
+	nomm2 = nomm.replace("name","")
+	nomm3 = nomm2.replace(/'/g, "")
+	nomm4 = nomm3.replace(" : ", "")
+  name2.innerHTML = "Name: " + nomm4
 
-	image2 = document.getElementById("image2")
-	str1 = elements_List[num2][3]
-	str2 = str1.replace("image", "")
-	str3 = str2.replace(/'/g, "")
-	str4 = str3.replace(" : ", "")
-	image2.src = "images/" + str4
+	
+	votes_html_2();
+
+	image_src_2();
 });
 }
 
@@ -122,3 +109,42 @@ go();
 	}
 	
 };
+
+
+function image_src_1(){
+	image1 = document.getElementById("image1")
+	sstr1 = elements_List[num1][3]
+	sstr2 = sstr1.replace("image", "")
+	sstr3 = sstr2.replace(/'/g, "")
+	sstr4 = sstr3.replace(" : ", "")
+	image1.src = "images/" + sstr4
+
+}
+
+function image_src_2(){
+	image2 = document.getElementById("image2")
+	str1 = elements_List[num2][3]
+	str2 = str1.replace("image", "")
+	str3 = str2.replace(/'/g, "")
+	str4 = str3.replace(" : ", "")
+	image2.src = "images/" + str4
+}
+
+function votes_html_1(){
+	votes1 = document.getElementById("votes1")
+
+	vote1 = elements_List[num1][4].replace("votes", "")
+	vote2 = vote1.replace(/'/g, "")
+	vote3 = vote2.replace(" : ", "")
+	votes1.innerHTML = " Current Votes: " + vote3
+
+}
+
+function votes_html_2(){
+	votes2 = document.getElementById("votes2")
+	vote21 = elements_List[num2][4].replace("votes", "")
+	vote22 = vote21.replace(/'/g, "")
+	vote23 = vote22.replace(" : ", "")
+	votes2.innerHTML = " Current Votes: " + vote23
+
+}
