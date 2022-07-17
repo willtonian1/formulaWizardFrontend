@@ -82,7 +82,6 @@ function vote_One(){
 		console.log(ssstr4)
 		console.log(ayo)
 		if (ayo == ssstr4){
-			console.log("yhh boo")
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
 go();
 		}
@@ -109,7 +108,6 @@ function vote_Two(){
 		console.log(ssstr4)
 		console.log(ayo)
 		if (ayo == ssstr4){
-			console.log("yhh boo")
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
 go();
 		}
