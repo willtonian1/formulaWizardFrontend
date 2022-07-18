@@ -32,4 +32,5 @@ background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, F
 	margin-top: 10px;
 	background-color: black;
 	border-radius: 3px;
+	color: red;
 }
