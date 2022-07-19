@@ -67,7 +67,7 @@ function vote_One(){
 	let name = document.getElementById("image1").src;
 	console.log(name)
 
-	ayo = name.replace("https://142cee50-9b39-430b-bdbd-1080c5b92929.id.repl.co/images/","")
+	ayo = name.replace("https://fronent.193ftgw.repl.co/images/","")
 	
 	let name10 = ayo.replace(".jpg", "")
 	insert_payload = {name:String(name10)}
@@ -93,7 +93,7 @@ function vote_Two(){
 	let name = document.getElementById("image2").src;
 	console.log(name)
 
-	ayo = name.replace("https://142cee50-9b39-430b-bdbd-1080c5b92929.id.repl.co/images/","")
+	ayo = name.replace("https://fronent.193ftgw.repl.co/images/","")
 	
 	let name10 = ayo.replace(".jpg", "")
 	insert_payload = {name:String(name10)}

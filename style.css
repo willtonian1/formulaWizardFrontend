@@ -14,6 +14,8 @@ background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, F
 	flex-direction: column;
 	margin-right: 20px;
 	text-align: center;
+	border-color: white;
+	
 }
 
 #image2{
@@ -26,11 +28,14 @@ background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, F
 	text-align: center;
 }
 
-.button{
+
+
+.buttons{
 	display: flex;
 	margin: 0 auto;
 	margin-top: 10px;
 	background-color: black;
 	border-radius: 3px;
 	color: red;
+	border-color: white;
 }
