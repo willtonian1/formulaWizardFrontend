@@ -115,6 +115,8 @@ go();
 
 };
 
+var num1; 
+
 function name_html_1(){
 	name1 = document.getElementById("name1")
 	num1 = getRandomInt(0,elements_List.length)
@@ -133,7 +135,6 @@ function name_html_2(){
 		num2 = getRandomInt(0,elements_List.length)
 	}
 
-	num2 = getRandomInt(0,elements_List.length)
 	nomm = elements_List[num2][1]
 	nomm2 = nomm.replace("name","")
 	nomm3 = nomm2.replace(/'/g, "")
@@ -167,7 +168,8 @@ function votes_html_1(){
 	vote1 = elements_List[num1][4].replace("votes", "")
 	vote2 = vote1.replace(/'/g, "")
 	vote3 = vote2.replace(" : ", "")
-	votes1.innerHTML = " Current Votes: " + vote3
+	vote4 = vote3.replace ("}", "")
+	votes1.innerHTML = " Current Votes: " + vote4
 
 };
 
@@ -176,6 +178,7 @@ function votes_html_2(){
 	vote21 = elements_List[num2][4].replace("votes", "")
 	vote22 = vote21.replace(/'/g, "")
 	vote23 = vote22.replace(" : ", "")
-	votes2.innerHTML = " Current Votes: " + vote23
+	votes24 = vote23.replace("}", "")
+	votes2.innerHTML = " Current Votes: " + votes24
 
 };

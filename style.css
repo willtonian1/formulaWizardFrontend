@@ -10,18 +10,22 @@ background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, F
 }
 
 .car_container{
+	margin-top: 10px;
 	display: inline-block;
 	flex-direction: column;
 	margin-right: 20px;
 	text-align: center;
 	border-color: white;
-	
+	border-style: solid;
+	padding: 5px;
 }
 
 #image2{
 	 width: 100px;
+	height: 70px;
 }#image1{
 	 width: 100px;
+	height: 70px;
 }
 #results_container{
 	margin: 0 auto;
