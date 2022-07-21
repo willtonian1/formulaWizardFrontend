@@ -2,9 +2,25 @@ html, body {
   height: 100%;
   width: 100%;
 	background-color: grey;
+	padding: 0px;
+	margin: 0;
 
 	
 	color: white;
+}
+
+
+.header{
+	background-color: white;
+	width: 100%;
+	display: flex;
+}
+.header_item{
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+	color: black;
 }
 
 .car_container{
@@ -37,8 +53,8 @@ html, body {
 	display: flex;
 	margin: 0 auto;
 	margin-top: 10px;
-	background-color: black;
+	background-color: white;
 	border-radius: 3px;
-	color: red;
+	color: black;
 	border-color: white;
 }
