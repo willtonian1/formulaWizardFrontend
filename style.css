@@ -9,9 +9,19 @@ html, body {
 	color: white;
 }
 
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+	--ow: #faf9f6;
+	--limeblue: #3feee6;
+	--turq: #40d0d0;
+	--s: #aaa9ad;
+}
 
 .header{
-	background-color: #3feee6;
+background: rgb(213,213,215);
+background: linear-gradient(36deg, rgba(213,213,215,1) 39%, rgba(116,82,219,1) 84%);
+	
 	width: 100%;
 	display: flex;
 	
@@ -34,36 +44,45 @@ padding: 5px;
 }
 
 .car_container{
-	
+	margin-top: 10px;
 	display: inline-block;
 	flex-direction: column;
 	text-align: center;
 box-shadow: 20px 10px 50px black;
 	border-radius: 10px;
 	padding: 5px;
-	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% );
+	background: rgb(213,213,215);
+background: linear-gradient(36deg, rgba(213,213,215,1) 39%, rgba(116,82,219,1) 84%);
+	
 }
 
 #image2{
-	 width: 100px;
-	height: 70px;
+	 width: 140px;
+	height: 80px;
 }#image1{
-	 width: 100px;
-	height: 70px;
-}
+	 width: 140px;
+	height: 80px;}
+
 #results_container{
+	height: 300px;
 	margin: 0 auto;
 	text-align: center;
 	color: black;
-	padding: 20px;
-	background: rgb(85,188,201);
-background: linear-gradient(117deg, rgba(85,188,201,1) 0%, rgba(151,202,239,1) 67%);
-
+	padding: 10px;
+	background-color: var(--ow)
 }
 #results_container div + div{
 	margin-left: 20px;
 }
 
+p{
+	margin: 2px;
+}
+
+.image{
+	margin-top: 5px;
+	border-radius: 5px;
+}
 
 
 .buttons{
@@ -73,7 +92,13 @@ background: linear-gradient(117deg, rgba(85,188,201,1) 0%, rgba(151,202,239,1) 6
 	height: 15px;
 border: none;
 	border-radius: 6px;
-	color: blue;
-	background-color: #3feee6;
+	color: purple;
+	background-color: var(--ow);
 
+}
+
+
+.leaderboard_container{
+	height: 300px;
+	background-color:#FAF9F6;
 }
