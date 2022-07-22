@@ -16,6 +16,7 @@ html, body {
 	--limeblue: #3feee6;
 	--turq: #40d0d0;
 	--s: #aaa9ad;
+	--p: #7452db;
 }
 
 .header{
@@ -92,7 +93,7 @@ p{
 	height: 15px;
 border: none;
 	border-radius: 6px;
-	color: purple;
+	color: var(--p);
 	background-color: var(--ow);
 
 }
