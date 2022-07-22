@@ -1,27 +1,27 @@
 html, body {
   height: 100%;
   width: 100%;
-	background: rgb(255,0,0);
-background: linear-gradient(180deg, rgba(255,0,0,0.9915254237288136) 0%, rgba(51,8,8,1) 67%);
+
 	padding: 0px;
 	margin: 0;
 
-	
+	font-family: 'Titillium Web', sans-serif;
 	color: white;
 }
 
 
 .header{
-	background-color: black;
+	background-color: #3feee6;
 	width: 100%;
 	display: flex;
+	
 }
 .header_item{
 	padding: 5px;
 	text-align: center;
 	display: inline-block;
 	margin: 0 auto;
-	color: red;
+	color: black;
 }
 
 .car_container{
@@ -47,6 +47,10 @@ box-shadow: 20px 10px 50px black;
 	margin: 0 auto;
 	text-align: center;
 	color: black;
+	padding: 20px;
+	background: rgb(85,188,201);
+background: linear-gradient(117deg, rgba(85,188,201,1) 0%, rgba(151,202,239,1) 67%);
+
 }
 
 
@@ -55,8 +59,10 @@ box-shadow: 20px 10px 50px black;
 	display: flex;
 	margin: 0 auto;
 	margin-top: 10px;
-	background-color: red;
-	border-radius: 3px;
-	color: black;
-	border-color: black;
+	height: 15px;
+border: none;
+	border-radius: 6px;
+	color: blue;
+	background-color: #3feee6;
+
 }
