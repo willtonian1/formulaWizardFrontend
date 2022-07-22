@@ -17,18 +17,26 @@ html, body {
 	
 }
 .header_item{
-	padding: 5px;
+	align-items: center;
+padding: 5px;
 	text-align: center;
+	color: black;
+	position: absolute;
+	width: 100%;
+	
+}
+
+#personal_logo{
+	padding:5px;
 	display: inline-block;
-	margin: 0 auto;
+	text-align: left;
 	color: black;
 }
 
 .car_container{
-	margin-top: 10px;
+	
 	display: inline-block;
 	flex-direction: column;
-	margin-right: 20px;
 	text-align: center;
 box-shadow: 20px 10px 50px black;
 	border-radius: 10px;
@@ -51,6 +59,9 @@ box-shadow: 20px 10px 50px black;
 	background: rgb(85,188,201);
 background: linear-gradient(117deg, rgba(85,188,201,1) 0%, rgba(151,202,239,1) 67%);
 
+}
+#results_container div + div{
+	margin-left: 20px;
 }
 
 
