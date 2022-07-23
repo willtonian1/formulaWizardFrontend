@@ -1,4 +1,12 @@
 # F1-Final-Frontend
-Frontend for my F1 Picks Website
+Formula Wizard is a personal web app which aims to find the best looking livery in f1 history using a simple picker.
 
-Using: JS, Axios Modules, HTML, CSS
+## FrameWorks and Languages (frontend)
+
+JS, Axios Modules, HTML, CSS
+
+
+## Other
+MVP will be deployed and hosted soon...
+
+*Backend can also be found on my Github Page*
