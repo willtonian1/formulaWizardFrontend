@@ -183,7 +183,7 @@ function votes_html_2(){
 };
 
 function leaderboard(){
-	axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
+	axios.get('https://Toms-Flask-App.193ftgw.repl.co/leaderboard').then(resp => {
 		data = resp.data
 	})
 }
