@@ -38,7 +38,6 @@ axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
 
 go(); 
 
-
 var payload;
 
 function doPostRequest() {
@@ -182,3 +181,7 @@ function votes_html_2(){
 	votes2.innerHTML = " Current Votes: " + votes24
 
 };
+
+function leaderboard(){
+	
+}
