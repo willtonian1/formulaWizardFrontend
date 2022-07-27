@@ -29,11 +29,10 @@ background: linear-gradient(36deg, rgba(213,213,215,1) 39%, rgba(116,82,219,1) 8
 }
 .header_item{
 	align-items: center;
-padding: 5px;
+	padding: 5px;
 	text-align: center;
 	color: black;
 	position: absolute;
-	width: 100%;
 	
 }
 
