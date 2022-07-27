@@ -1,5 +1,8 @@
-var load
-var load2
+var load = 0
+var load2 = 0
+
+image1 = document.getElementById("image1")
+image2 = document.getElementById("image2")
 
 
 function go() {
@@ -37,7 +40,6 @@ function go() {
 
 		image_src_2();
 
-		syncro()
 	});
 };
 
@@ -67,8 +69,7 @@ function getRandomInt(min, max) {
 };
 
 function vote_One() {
-	load = 0
-	load2 = 0
+
 	//console.log(elements_List)
 	let name = document.getElementById("image1").src;
 	console.log(name)
@@ -106,7 +107,6 @@ function vote_One() {
 
 			image_src_2();
 
-			syncro();
 
 		}
 	}
@@ -115,8 +115,7 @@ function vote_One() {
 
 function vote_Two() {
 
-	load = 0
-	load2 = 0
+
 
 	let name = document.getElementById("image2").src;
 	console.log(name)
@@ -153,7 +152,7 @@ function vote_Two() {
 			votes_html_2();
 
 			image_src_2();
-			syncro();
+
 
 		}
 	}
@@ -211,8 +210,7 @@ function image_src_2() {
 };
 
 function votes_html_1() {
-	load = 0
-	load2 = 0
+
 	votes1 = document.getElementById("votes1")
 
 	vote1 = elements_List[num1][4].replace("votes", "")
@@ -224,8 +222,7 @@ function votes_html_1() {
 };
 
 function votes_html_2() {
-	load = 0
-	load2 = 0
+
 	votes2 = document.getElementById("votes2")
 	vote21 = elements_List[num2][4].replace("votes", "")
 	vote22 = vote21.replace(/'/g, "")
@@ -245,27 +242,35 @@ function leaderboard() {
 
 function images_sync() {
 	load += 1
-	console.log("i")
-
-}
-
-function images_sync2() {
-	load2 += 1
-	console.log("i2")
-}
-
-
-image1 = document.getElementById("image1")
-image2 = document.getElementById("image2")
-
-
-function syncro() {
+	console.log(load + ".........." + load2)
 	if (load == load2) {
+
+
 		image1.style.display = 'flex';
 		image2.style.display = "flex";
 		console.log("yo")
+
 	} else {
 		image1.style.display = 'none';
 		image2.style.display = "none";
 	}
 }
+
+function images_sync2() {
+	load2 += 1
+	console.log(load + ".........." + load2)
+
+	if (load == load2) {
+
+
+		image1.style.display = 'flex';
+		image2.style.display = "flex";
+		console.log("yo")
+
+	} else {
+		image1.style.display = 'none';
+		image2.style.display = "none";
+	}
+}
+
+
