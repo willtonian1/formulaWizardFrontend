@@ -36,6 +36,8 @@ function go() {
 		votes_html_2();
 
 		image_src_2();
+
+		syncro()
 	});
 };
 
@@ -65,6 +67,8 @@ function getRandomInt(min, max) {
 };
 
 function vote_One() {
+	load = 0
+	load2 = 0
 	//console.log(elements_List)
 	let name = document.getElementById("image1").src;
 	console.log(name)
@@ -102,12 +106,18 @@ function vote_One() {
 
 			image_src_2();
 
+			syncro();
+
 		}
 	}
 
 };
 
 function vote_Two() {
+
+	load = 0
+	load2 = 0
+
 	let name = document.getElementById("image2").src;
 	console.log(name)
 
@@ -143,6 +153,8 @@ function vote_Two() {
 			votes_html_2();
 
 			image_src_2();
+			syncro();
+
 		}
 	}
 
@@ -199,6 +211,8 @@ function image_src_2() {
 };
 
 function votes_html_1() {
+	load = 0
+	load2 = 0
 	votes1 = document.getElementById("votes1")
 
 	vote1 = elements_List[num1][4].replace("votes", "")
@@ -210,6 +224,8 @@ function votes_html_1() {
 };
 
 function votes_html_2() {
+	load = 0
+	load2 = 0
 	votes2 = document.getElementById("votes2")
 	vote21 = elements_List[num2][4].replace("votes", "")
 	vote22 = vote21.replace(/'/g, "")
@@ -227,34 +243,29 @@ function leaderboard() {
 
 
 
+function images_sync() {
+	load += 1
+	console.log("i")
 
-// window.addEventListener("load", event => {
-//     var image = document.getElementById('image1');
-//     var isLoaded = image.complete
-// 		if(isLoaded = false){
-// 			var image2 = document.getElementById("image2")
-// 			image2.style.display = "none"
-// 		}
-// 	else{
-// 		var image2 = document.getElementById("image2")
-// 			image2.style.display = "flex"
-// 	}
+}
 
-// });
+function images_sync2() {
+	load2 += 1
+	console.log("i2")
+}
 
-// if (load == 1 && load2 == 1) {
 
-// 	console.log('uo')
-// 	image1 = document.getElementById("image1")
-// 	image2 = document.getElementById("image2")
+image1 = document.getElementById("image1")
+image2 = document.getElementById("image2")
 
-// 	image1.style.display = "flex";
-// 	image2.style.display = "flex";
 
-// 	load = 0
-// 	load2 = 0
-// }
-
-function image_sync(){
-	load = 1
+function syncro() {
+	if (load == load2) {
+		image1.style.display = 'flex';
+		image2.style.display = "flex";
+		console.log("yo")
+	} else {
+		image1.style.display = 'none';
+		image2.style.display = "none";
+	}
 }
