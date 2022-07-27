@@ -82,7 +82,23 @@ function vote_One(){
 		console.log(ayo)
 		if (ayo == ssstr4){
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
-go();
+
+		//reloading new content
+			name_html_1();
+
+	votes_html_1();
+	
+	image_src_1();
+
+	//second inline
+	
+
+	name_html_2();
+	
+	votes_html_2();
+
+	image_src_2();
+			
 		}
 	}
 
@@ -108,7 +124,22 @@ function vote_Two(){
 		console.log(ayo)
 		if (ayo == ssstr4){
 			axios.post('https://Toms-Flask-App.193ftgw.repl.co/vote', insert_payload);
-go();
+
+			//reloading new content
+			name_html_1();
+
+	votes_html_1();
+	
+	image_src_1();
+
+	//second inline
+	
+
+	name_html_2();
+	
+	votes_html_2();
+
+	image_src_2();
 		}
 	}
 
@@ -150,6 +181,8 @@ function image_src_1(){
 	sstr4 = sstr3.replace(" : ", "")
 	image1.src = "images/" + sstr4
 
+	
+
 };
 
 function image_src_2(){
@@ -187,3 +220,12 @@ function leaderboard(){
 		data = resp.data
 	})
 }
+
+
+window.addEventListener("load", event => {
+    var image = document.querySelector('image1');
+    var isLoaded = image.complete && image.naturalHeight !== 0;
+    var image2 = document.querySelector('image2');
+		image2.style.display = "flex";
+});
+
