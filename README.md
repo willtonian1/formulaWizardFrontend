@@ -1,5 +1,5 @@
 # F1-Final-Frontend
-Formula Wizard is a personal web app which aims to find the best looking livery in f1 history using a simple picker.
+Formula Wizard is a personal web app which aims to find the best looking livery in f1 history using a simple picker. Implementing ML Soon.
 
 ## FrameWorks and Languages (frontend)
 
