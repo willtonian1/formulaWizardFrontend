@@ -6,7 +6,7 @@ image2 = document.getElementById("image2")
 
 
 function go() {
-    axios.get('https://Toms-Flask-App.193ftgw.repl.co').then(resp => {
+    axios.get('https://team-willtonian1-formulawizardbackend-main-7puvzl3oma-wm.a.run.app/').then(resp => {
         data = resp.data;
         data2 = data.replace("[", "");
         data3 = data2.replace("]", "");
@@ -232,13 +232,6 @@ function votes_html_2() {
 
 };
 
-function leaderboard() {
-    axios.get('https://Toms-Flask-App.193ftgw.repl.co/leaderboard').then(resp => {
-        data = resp.data
-    })
-}
-
-
 
 function images_sync() {
     load += 1
@@ -272,3 +265,15 @@ function images_sync2() {
         image2.style.display = "none";
     }
 }
+
+//Leaderboard stuff
+function leaderboard() {
+    axios.get('https://team-willtonian1-formulawizardbackend-main-7puvzl3oma-wm.a.run.app/leaderboard').then(resp => {
+        data = resp.data
+
+        leaderboard_space = document.getElementById("leader");
+        leaderboard_space.innerHTML = String(data);
+    })
+}
+
+leaderboard();
