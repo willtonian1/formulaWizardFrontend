@@ -105,3 +105,10 @@ p {
 #leader {
     color: black;
 }
+
+table,
+th,
+td {
+    border: 1px solid black;
+    color: black;
+}

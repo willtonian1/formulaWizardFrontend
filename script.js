@@ -44,6 +44,7 @@ function go() {
 };
 
 go();
+leaderboard();
 
 var payload;
 
@@ -269,11 +270,38 @@ function images_sync2() {
 //Leaderboard stuff
 function leaderboard() {
     axios.get('https://team-willtonian1-formulawizardbackend-main-7puvzl3oma-wm.a.run.app/leaderboard').then(resp => {
-        data = resp.data
+        ldata = resp.data
+
+
+        ldata2 = ldata.replace("[", "");
+        ldata3 = ldata2.replace("]", "");
+
+        ldataList = ldata3.split("},")
+
+        lelements_List = []
+
+        for (let i = 0; i < ldataList.length; i++) {
+
+            lnewElement = ldataList[i].split(",")
+                //onsole.log(newElement)
+            lelements_List.push(lnewElement)
+
+        }
+
+
+
+
 
         leaderboard_space = document.getElementById("leader");
-        leaderboard_space.innerHTML = String(data);
+        leaderboard_space.innerHTML = String(lelements_List);
+
+        leaderboard_html();
     })
+
 }
 
-leaderboard();
+
+function leaderboard_html() {
+    column1 = document.getElementById("no1");
+    column1.innerHTML = String(lelements_List[-1])
+}
