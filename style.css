@@ -1,3 +1,5 @@
+
+
 html,
 body {
     height: 100%;
@@ -10,18 +12,11 @@ body {
 }
 
 :root {
-    --blue: #1e90ff;
-    --white: #ffffff;
-    --ow: #faf9f6;
-    --limeblue: #3feee6;
-    --turq: #40d0d0;
-    --s: #aaa9ad;
-    --p: #7452db;
+
 }
 
 .header {
-    background: rgb(213, 213, 215);
-    background: linear-gradient(36deg, rgba(213, 213, 215, 1) 39%, rgba(116, 82, 219, 1) 84%);
+    background: black;
     width: 100%;
     display: flex;
 }
@@ -30,7 +25,7 @@ body {
     align-items: center;
     padding: 5px;
     text-align: center;
-    color: black;
+    color: white;
     position: absolute;
 }
 
@@ -38,7 +33,7 @@ body {
     padding: 5px;
     display: inline-block;
     text-align: left;
-    color: black;
+    color: white;
 }
 
 .car_container {
@@ -46,12 +41,10 @@ body {
     display: inline-block;
     flex-direction: column;
     text-align: center;
-    box-shadow: 20px 10px 50px black;
+    box-shadow: 10px 5px 20px white;
     border-radius: 10px;
     padding: 5px;
-    background: rgb(213, 213, 215);
-    background: linear-gradient(36deg, rgba(213, 213, 215, 1) 39%, rgba(116, 82, 219, 1) 84%);
-}
+    background-color: #e10600;}
 
 #image2 {
     width: 140px;
@@ -61,15 +54,19 @@ body {
 #image1 {
     width: 140px;
     height: 80px;
+
 }
 
 #results_container {
-    height: 300px;
+    height: 550px;
     margin: 0 auto;
     text-align: center;
-    color: black;
+    color: white;
     padding: 10px;
-    background-color: var(--ow)
+    background-color:#15151e;
+    background-image: url(https://www.f1manager.com/_nuxt/img/f1m22-keyart-announce-m-white-nologo.43629da.svg);
+    background-size: cover;
+    background-position: 50%;
 }
 
 #results_container div+div {
@@ -84,17 +81,20 @@ p {
     margin-top: 5px;
     border-radius: 5px;
     display: none;
+
 }
 
 .buttons {
+    height: 20px;
     display: flex;
     margin: 0 auto;
     margin-top: 10px;
-    height: 15px;
-    border: none;
+    border-color: white;
     border-radius: 6px;
-    color: var(--p);
-    background-color: var(--ow);
+    color: white;
+    background-color: #e10600;
+    line-height: 1.2;
+
 }
 
 .leaderboard_container {
