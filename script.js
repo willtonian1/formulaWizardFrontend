@@ -320,6 +320,6 @@ function remove_votes(votes) {
 function leaderboard_html() {
     column1 = document.getElementById("no1");
     column2 = document.getElementById("no1v")
-    column1.innerHTML = remove_strings(lelements_List[0][0])
-    column2.innerHTML = remove_votes(lelements_List[0][1])
+    column1.innerHTML = remove_string(lelements_List[(lelements_List.length - 1)][0])
+    column2.innerHTML = remove_votes(lelements_List[(lelements_List.length - 1)][1])
 }
