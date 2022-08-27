@@ -276,7 +276,10 @@ function leaderboard() {
         ldata2 = ldata.replace("[", "");
         ldata3 = ldata2.replace("]", "");
 
-        ldataList = ldata3.split("},")
+
+        ldata4 = ldata3.replace(/}/g, '.')
+        ldata5 = ldata4.replace(/{/g, "")
+        ldataList = ldata5.split(".")
 
         lelements_List = []
 
@@ -300,8 +303,23 @@ function leaderboard() {
 
 }
 
+function remove_string(strings) {
+    strings2 = strings.replace("'name': ", "")
+    strings3 = strings2.replace(/'/g, "")
+    return strings3
+
+}
+
+function remove_votes(votes) {
+    votes2 = votes.replace(/'/g, "")
+    votes4 = votes2.replace("votes:", "")
+
+    return votes4;
+}
 
 function leaderboard_html() {
     column1 = document.getElementById("no1");
-    column1.innerHTML = String(lelements_List[-1])
+    column2 = document.getElementById("no1v")
+    column1.innerHTML = remove_strings(lelements_List[0][0])
+    column2.innerHTML = remove_votes(lelements_List[0][1])
 }
