@@ -1,36 +1,36 @@
-    <!DOCTYPE html>
-    <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>F1 Wizard</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    
-    
-    </head>
-    
-    <body>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    
-        <script src="script.js"></script>
-    
-    
-        <div class="header">
-            <div>
-                <a id="personal_logo" href="https://www.tomwilliamstech.com" style="text-decoration: none;"> TWT </a>
-            </div>
-    
-            <div style="text-align: center;">
-                <a class="header_item" style="margin: 0 auto; text-align: center;">formulaWizard</a>
-            </div>
-    
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>F1 Wizard</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+    <div class="header">
+        <div>
+            <a id="personal_logo" href="https://www.tomwilliamstech.com" style="text-decoration: none;"> TWT </a>
         </div>
-        <!--
+
+        <div style="text-align: center;">
+            <a class="header_item" style="margin: 0 auto; text-align: center;">formulaWizard</a>
+        </div>
+
+    </div>
+    <!--
         
     <div id = "input_Section">
         <input type="text" id="myText" value="Car name...">
@@ -38,50 +38,96 @@
         <button onclick="doPostRequest()"> DO IT</button>
     </div>
     -->
-    
-        <div id="results_container">
-    
-            <div class="car_container">
-                <p class="name " id="name1"></p>
-                <p class="votes" id="votes1"></p>
-                <img class="image" id="image1" src="" onload="images_sync()"></img>
-    
-                <button class="buttons" id="button1" onclick="vote_One()">Choose</button>
-            </div>
-    
-    
-    
-            <div class="car_container">
-                <p class="name" id="name2"></p>
-                <p class="vote" id='votes2'></p>
-                <img class="image" id="image2" src="" onload="images_sync2()"></img>
-                <button class="buttons" id="button2" onclick="vote_Two()">Choose</button>
-            </div>
-    
-    
-    
+
+    <div id="results_container">
+
+        <div class="car_container">
+            <p class="name " id="name1"></p>
+            <p class="votes" id="votes1"></p>
+            <img class="image" id="image1" src="" onload="images_sync()"></img>
+
+            <button class="buttons" id="button1" onclick="vote_One()">Choose</button>
         </div>
-    
-        <div class="leaderboard_container">
-            <p id="leader"></p>
-            <table>
-                <tr>
-    
-                    <th>
-                        Car
-                    </th>
-                    <th>
-                        Votes
-                    </th>
-                </tr>
-    
+
+
+
+        <div class="car_container">
+            <p class="name" id="name2"></p>
+            <p class="vote" id='votes2'></p>
+            <img class="image" id="image2" src="" onload="images_sync2()"></img>
+            <button class="buttons" id="button2" onclick="vote_Two()">Choose</button>
+        </div>
+
+
+
+    </div>
+
+    <div class="leaderboard_container">
+        <p id="leader"></p>
+        <table>
+            <tr>
+
+                <th>
+                    Car
+                </th>
+                <th>
+                    Votes
+                </th>
+            </tr>
+
+
+            <tr>
                 <td id="no1"></td>
                 <td id="no1v"></td>
-    
-            </table>
-        </div>
-    
-    
-    </body>
-    
-    </html>
+            </tr>
+
+            <tr>
+                <td id="no2"></td>
+                <td id="no2v"></td>
+            </tr>
+            <tr>
+                <td id="no3"></td>
+                <td id="no3v"></td>
+            </tr>
+            <tr>
+                <td id="no4"></td>
+                <td id="no4v"></td>
+            </tr>
+            <tr>
+                <td id="no5">
+
+                </td>
+                <td id="no5v">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td id="no6"></td>
+                <td id="no6v"></td>
+            </tr>
+            <tr>
+                <td id="no7"></td>
+                <td id="no7v"></td>
+            </tr>
+            <tr>
+                <td id="no8"></td>
+                <td id="no8v"></td>
+            </tr>
+            <tr>
+                <td id="no9"></td>
+                <td id="no9v"></td>
+            </tr>
+            <tr>
+                <td id="no10"></td>
+                <td id="no10v"></td>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+</body>
+
+</html>

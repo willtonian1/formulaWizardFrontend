@@ -295,10 +295,11 @@ function leaderboard() {
 
 
 
-        leaderboard_space = document.getElementById("leader");
-        leaderboard_space.innerHTML = String(lelements_List);
+        //leaderboard_space = document.getElementById("leader");
+        //leaderboard_space.innerHTML = String(lelements_List);
 
-        leaderboard_html();
+        //leaderboard_html();
+        five();
     })
 
 }
@@ -320,6 +321,18 @@ function remove_votes(votes) {
 function leaderboard_html() {
     column1 = document.getElementById("no1");
     column2 = document.getElementById("no1v")
-    column1.innerHTML = remove_string(lelements_List[(lelements_List.length - 1)][0])
-    column2.innerHTML = remove_votes(lelements_List[(lelements_List.length - 1)][1])
+    column1.innerHTML = remove_string(lelements_List[(lelements_List.length - 2)][0])
+    column2.innerHTML = remove_votes(lelements_List[(lelements_List.length - 2)][1])
+}
+
+
+function five() {
+    for (let i = 0; i < 10; i++) {
+        column = document.getElementById("no" + String(i + 1))
+        column2 = document.getElementById("no" + String(i + 1) + "v")
+
+        column.innerHTML = remove_string(lelements_List[lelements_List.length - (2 + i)][0])
+        column2.innerHTML = remove_votes(lelements_List[lelements_List.length - (2 + i)][1])
+
+    }
 }

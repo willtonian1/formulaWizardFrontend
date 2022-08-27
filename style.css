@@ -1,5 +1,3 @@
-
-
 html,
 body {
     height: 100%;
@@ -11,9 +9,7 @@ body {
     background-color: var(--ow);
 }
 
-:root {
-
-}
+:root {}
 
 .header {
     background: black;
@@ -44,7 +40,8 @@ body {
     box-shadow: 10px 5px 20px white;
     border-radius: 10px;
     padding: 5px;
-    background-color: #e10600;}
+    background-color: #e10600;
+}
 
 #image2 {
     width: 140px;
@@ -54,7 +51,6 @@ body {
 #image1 {
     width: 140px;
     height: 80px;
-
 }
 
 #results_container {
@@ -63,7 +59,7 @@ body {
     text-align: center;
     color: white;
     padding: 10px;
-    background-color:#15151e;
+    background-color: #15151e;
     background-image: url(https://www.f1manager.com/_nuxt/img/f1m22-keyart-announce-m-white-nologo.43629da.svg);
     background-size: cover;
     background-position: 50%;
@@ -81,7 +77,6 @@ p {
     margin-top: 5px;
     border-radius: 5px;
     display: none;
-
 }
 
 .buttons {
@@ -94,7 +89,6 @@ p {
     color: white;
     background-color: #e10600;
     line-height: 1.2;
-
 }
 
 .leaderboard_container {
@@ -106,9 +100,23 @@ p {
     color: black;
 }
 
-table,
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 th,
 td {
-    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
     color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
 }
