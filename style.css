@@ -21,7 +21,7 @@ body {
 
 .header_item {
     padding: 5px;
-    color: white;
+    color: #e10600;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -63,9 +63,9 @@ body {
     color: white;
     padding: 10px;
     background-color: #15151e;
-    background-image: url(https://www.f1manager.com/_nuxt/img/f1m22-keyart-announce-m-white-nologo.43629da.svg);
+    /*   background-image: url(https://www.f1manager.com/_nuxt/img/f1m22-keyart-announce-m-white-nologo.43629da.svg);
     background-size: cover;
-    background-position: 25%;
+    background-position: 50%; */
 }
 
 #results_container div+div {
@@ -90,7 +90,7 @@ p {
     border-color: white;
     border-radius: 6px;
     color: white;
-    background-color: #e10600;
+    background-color: black;
     line-height: 1.2;
 }
 
