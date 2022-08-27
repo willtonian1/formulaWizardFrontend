@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
     color: white;
-    background-color: var(--ow);
+    background-color: #15151e;
 }
 
 :root {}
@@ -15,14 +15,16 @@ body {
     background: black;
     width: 100%;
     display: flex;
+    position: fixed;
+    height: 30px;
 }
 
 .header_item {
-    align-items: center;
     padding: 5px;
-    text-align: center;
     color: white;
-    position: absolute;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #personal_logo {
@@ -40,7 +42,7 @@ body {
     box-shadow: 10px 5px 20px white;
     border-radius: 10px;
     padding: 5px;
-    background-color: #e10600;
+    background-color: black;
 }
 
 #image2 {
@@ -54,7 +56,8 @@ body {
 }
 
 #results_container {
-    height: 550px;
+    height: 250px;
+    ;
     margin: 0 auto;
     text-align: center;
     color: white;
@@ -62,7 +65,7 @@ body {
     background-color: #15151e;
     background-image: url(https://www.f1manager.com/_nuxt/img/f1m22-keyart-announce-m-white-nologo.43629da.svg);
     background-size: cover;
-    background-position: 50%;
+    background-position: 25%;
 }
 
 #results_container div+div {
@@ -109,14 +112,11 @@ th,
 td {
     text-align: left;
     padding: 8px;
+    background-color: white;
     color: black;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2
-}
-
 th {
-    background-color: #04AA6D;
+    background-color: #15151e;
     color: white;
 }
