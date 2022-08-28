@@ -17,6 +17,8 @@
         display: flex;
         position: fixed;
         height: 30px;
+z-index: 101;
+
     }
     
     .header_item {
@@ -25,7 +27,7 @@
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-z-index: 101;
+
     }
     
     #personal_logo {
