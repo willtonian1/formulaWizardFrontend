@@ -95,7 +95,7 @@ function vote_One() {
             //reloading new content
             name_html_1();
 
-            votes_html_1();
+            //votes_html_1();
 
             image_src_1();
 
@@ -104,7 +104,7 @@ function vote_One() {
 
             name_html_2();
 
-            votes_html_2();
+            //votes_html_2();
 
             image_src_2();
 
@@ -141,7 +141,7 @@ function vote_Two() {
             //reloading new content
             name_html_1();
 
-            votes_html_1();
+            //votes_html_1();
 
             image_src_1();
 
@@ -150,7 +150,7 @@ function vote_Two() {
 
             name_html_2();
 
-            votes_html_2();
+            //votes_html_2();
 
             image_src_2();
 
