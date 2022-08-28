@@ -27,7 +27,7 @@ function go() {
 
         name_html_1();
 
-        votes_html_1();
+        // votes_html_1();
 
         image_src_1();
 
@@ -36,7 +36,7 @@ function go() {
 
         name_html_2();
 
-        votes_html_2();
+        //votes_html_2();
 
         image_src_2();
 
@@ -169,7 +169,7 @@ function name_html_1() {
     nom2 = nom.replace("name", "")
     nom3 = nom2.replace(/'/g, "")
     nom4 = nom3.replace(" : ", "")
-    name1.innerHTML = "Name: " + nom4
+    name1.innerHTML = nom4
 };
 
 function name_html_2() {
@@ -184,7 +184,7 @@ function name_html_2() {
     nomm2 = nomm.replace("name", "")
     nomm3 = nomm2.replace(/'/g, "")
     nomm4 = nomm3.replace(" : ", "")
-    name2.innerHTML = "Name: " + nomm4
+    name2.innerHTML = nomm4
 
 };
 
@@ -210,28 +210,28 @@ function image_src_2() {
     image2.src = "images/" + str4
 };
 
-function votes_html_1() {
+// function votes_html_1() {
 
-    votes1 = document.getElementById("votes1")
+//     votes1 = document.getElementById("votes1")
 
-    vote1 = elements_List[num1][4].replace("votes", "")
-    vote2 = vote1.replace(/'/g, "")
-    vote3 = vote2.replace(" : ", "")
-    vote4 = vote3.replace("}", "")
-    votes1.innerHTML = " Current Votes: " + vote4
+//     vote1 = elements_List[num1][4].replace("votes", "")
+//     vote2 = vote1.replace(/'/g, "")
+//     vote3 = vote2.replace(" : ", "")
+//     vote4 = vote3.replace("}", "")
+//     votes1.innerHTML = " Current Votes: " + vote4
 
-};
+// };
 
-function votes_html_2() {
+// function votes_html_2() {
 
-    votes2 = document.getElementById("votes2")
-    vote21 = elements_List[num2][4].replace("votes", "")
-    vote22 = vote21.replace(/'/g, "")
-    vote23 = vote22.replace(" : ", "")
-    votes24 = vote23.replace("}", "")
-    votes2.innerHTML = " Current Votes: " + votes24
+//     votes2 = document.getElementById("votes2")
+//     vote21 = elements_List[num2][4].replace("votes", "")
+//     vote22 = vote21.replace(/'/g, "")
+//     vote23 = vote22.replace(" : ", "")
+//     votes24 = vote23.replace("}", "")
+//     votes2.innerHTML = " Current Votes: " + votes24
 
-};
+// };
 
 
 function images_sync() {

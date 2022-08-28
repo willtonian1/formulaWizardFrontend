@@ -43,22 +43,44 @@
 
     <div id="results_container">
 
-        <div class="car_container">
-            <p class="name " id="name1"></p>
-            <p class="votes" id="votes1"></p>
-            <img class="image" id="image1" src="" onload="images_sync()"></img>
+        <div style="position: relative;margin-top: 10px;
+        display: inline-block;
+        flex-direction: column;
+        text-align: center; margin: 0 auto; height: 250px" class="card_container">
 
-            <button class="buttons" id="button1" onclick="vote_One()">Choose</button>
+
+
+            <div style="width: 250px; color:white; text-decoration: bold; background-image: url(images/background1.jpg); height: 150px; position: absolute; z-index: 1;left: 50%; transform: translateX(-50%); top: 70px; background-color: white; border-radius: 10px; ">
+                <h1 id="name1" style="margin-top: 70px; margin-bottom: 2px; font-size: 30px;"></h1>
+                <button id="button1" onclick="vote_One()" style="">Choose</button>
+            </div>
+
+            <img class="image" id="image1" src="" onload="images_sync()" style="width: 220px; height: 130px; position: absolute; z-index: 100; left: 50%; transform: translateX(-50%);
+            border-radius: 10px;"></img>
+
         </div>
 
 
 
-        <div class="car_container">
-            <p class="name" id="name2"></p>
-            <p class="vote" id='votes2'></p>
-            <img class="image" id="image2" src="" onload="images_sync2()"></img>
-            <button class="buttons" id="button2" onclick="vote_Two()">Choose</button>
+        <div style="position: relative;margin-top: 10px;
+        display: inline-block;
+        flex-direction: column;
+        text-align: center; margin: 0 auto; height: 250px;" class="card_container">
+
+
+
+            <div style="width: 250px; color:white; text-decoration: bold; background-image: url(images/background1.jpg); height: 150px; position: absolute; z-index: 1;left: 50%; transform: translateX(-50%); top: 70px; background-color: white; border-radius: 10px; ">
+                <h1 id="name2" style="margin-top: 70px; margin-bottom: 2px; font-size: 30px;"></h1>
+                <button id="button2" onclick="vote_Two()" style="">Choose</button>
+            </div>
+
+            <img class="image" id="image2" src="" onload="images_sync2()" style="width: 220px; height: 130px; position: absolute; z-index: 100; left: 50%; transform: translateX(-50%);
+            border-radius: 10px;"></img>
+
         </div>
+
+
+
 
 
 
@@ -128,6 +150,24 @@
 
         </table>
     </div>
+    <!--
+    <div style="display: flex;position: relative;">
+
+        <img class="image" id="image1" src="" onload="images_sync()" style="width: 200px; height: 150px; position: absolute; z-index: 100; left: 50%; transform: translateX(-50%);   border: 3px solid white;
+        border-radius: 10px;"></img>
+
+        <div style="width: 250px; height: 150px; position: absolute; z-index: 1;left: 50%; transform: translateX(-50%); top: 70px; background-color: white; border-radius: 10px; ">
+            <h1 id="name1">
+                <p id="votes1">
+
+                </p>
+            </h1>
+            <button class="buttons" id="button1" onclick="vote_One()">Choose</button>
+
+        </div>
+    </div>
+
+    -->
 
 
 </body>
