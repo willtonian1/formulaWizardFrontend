@@ -24,18 +24,46 @@
     <script src="script.js"></script>
 
 
+    <!--Loader-->
+    <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!--Loading Script-->
+    <script>
+        wrap = document.getElementById("loader-wrapper").style
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded');
+            wrap.opacity = 0;
+            wrap.zIndex = -100;
+
+
+        });
+    </script>
+
+    <!--Header-->
     <div class="header">
-        <div>
-            <a id="personal_logo" href="https://www.tomwilliamstech.com" style="text-decoration: none;"> <img src="logo.svg"></a>
+
+        <div class="header_wrap">
+            <div class="header_half">
+                <a id="personal_logo" href="https://www.tomwilliamstech.com" class="header_item">
+                    <img src="logo.svg">
+                </a>
+            </div>
+
+
+            <div style="text-align: center;" class="header_half">
+                <a class="header_item">F1Draft</a>
+            </div>
+
         </div>
 
-        <div style="text-align: center;">
-            <a class="header_item" style="margin: 0 auto; text-align: center;">FORMULAWIZARD</a>
-        </div>
+
 
     </div>
 
-    <div style="width: 100%; height:30px; "></div>
+    <div style="width: 100%; height:50px; "></div>
+
     <!--
         
     <div id = "input_Section">
@@ -75,7 +103,7 @@
 
             <div style="width: 250px; color:white; text-decoration: bold; background-image: url(images/background1.jpg); height: 150px; position: absolute; z-index: 1;left: 50%; transform: translateX(-50%); top: 70px; background-color: white; border-radius: 10px; ">
                 <h1 id="name2" style="margin-top: 70px; margin-bottom: 2px; font-size: 30px;"></h1>
-                <button id="button2" onclick="vote_Two()" style="">Choose</button>
+                <button id="button2" onclick="vote_Two()">Choose</button>
             </div>
 
             <img class="image" id="image2" src="" onload="images_sync2()" style="width: 220px; height: 130px; position: absolute; z-index: 100; left: 50%; transform: translateX(-50%);
@@ -90,6 +118,7 @@
 
     </div>
 
+    <!-- Leaderboard Table -->
     <div class="leaderboard_container">
         <p id="leader"></p>
         <table>
@@ -154,25 +183,6 @@
 
         </table>
     </div>
-    <!--
-    <div style="display: flex;position: relative;">
-
-        <img class="image" id="image1" src="" onload="images_sync()" style="width: 200px; height: 150px; position: absolute; z-index: 100; left: 50%; transform: translateX(-50%);   border: 3px solid white;
-        border-radius: 10px;"></img>
-
-        <div style="width: 250px; height: 150px; position: absolute; z-index: 1;left: 50%; transform: translateX(-50%); top: 70px; background-color: white; border-radius: 10px; ">
-            <h1 id="name1">
-                <p id="votes1">
-
-                </p>
-            </h1>
-            <button class="buttons" id="button1" onclick="vote_One()">Choose</button>
-
-        </div>
-    </div>
-
-    -->
-
 
 </body>
 
