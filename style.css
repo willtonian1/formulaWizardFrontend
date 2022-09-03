@@ -32,8 +32,9 @@ body {
 .header_half {
     display: inline-block;
     margin: 0 auto;
-    width: 100px;
 }
+
+.header_item {}
 
 #personal_logo {
     padding: 5px;
@@ -95,35 +96,29 @@ p {
 #button1 {
     width: 175px;
     border-radius: 12px;
-    background-color: white;
+    background-color: #d0312d;
+    border: 1px solid white;
     height: 50px;
     color: black;
-    border: none;
     font-size: 20px;
 }
 
 #button1:hover {
     transform: scale(1.05);
-    -o-transition-timing-function: ease-in-out;
-    background-image: url(images/background1.jpg);
-    background-size: inherit;
 }
 
 #button2 {
     width: 175px;
     border-radius: 12px;
-    background-color: white;
+    border: 1px solid white;
+    background-color: #d0312d;
     height: 50px;
     color: black;
-    border: none;
     font-size: 20px;
 }
 
 #button2:hover {
     transform: scale(1.05);
-    -o-transition-timing-function: ease-in-out;
-    background-image: url(images/background1.jpg);
-    background-size: inherit;
 }
 
 @media screen and (max-width: 600px) {
@@ -158,8 +153,8 @@ th,
 td {
     text-align: left;
     padding: 8px;
-    background-color: white;
-    color: black;
+    background-color: red;
+    color: white;
 }
 
 th {
