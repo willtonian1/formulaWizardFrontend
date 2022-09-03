@@ -75,7 +75,7 @@ function vote_One() {
     let name = document.getElementById("image1").src;
     console.log(name)
 
-    ayo = name.replace("https://www.tomwilliamstech.com/formulaWizardFrontend/images/", "")
+    ayo = name.replace("https://www.f1draft.com/images/", "")
 
     let name10 = ayo.replace(".jpg", "")
     insert_payload = { name: String(name10) }
@@ -121,7 +121,7 @@ function vote_Two() {
     let name = document.getElementById("image2").src;
     console.log(name)
 
-    ayo = name.replace("https://www.tomwilliamstech.com/formulaWizardFrontend/images/", "")
+    ayo = name.replace("https://www.f1draft.com/images/", "")
 
     let name10 = ayo.replace(".jpg", "")
     insert_payload = { name: String(name10) }
