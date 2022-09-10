@@ -21,7 +21,7 @@
 <body>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script src="script.js"></script>
+
 
 
     <!--Loader-->
@@ -30,16 +30,16 @@
     </div>
 
     <!--Loading Script-->
+
     <script>
         wrap = document.getElementById("loader-wrapper").style
         window.addEventListener('load', (event) => {
             console.log('page is fully loaded');
-            wrap.opacity = 0;
-            wrap.zIndex = -100;
-
+            loaded_page = true;
 
         });
     </script>
+    <script src="script.js"></script>
 
     <!--Header
     

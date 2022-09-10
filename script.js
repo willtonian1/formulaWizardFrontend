@@ -1,6 +1,6 @@
 var load = 0
 var load2 = 0
-
+loaded_page = false
 image1 = document.getElementById("image1")
 image2 = document.getElementById("image2")
 
@@ -14,6 +14,11 @@ function go() {
         dataList = data3.split("},")
 
         elements_List = []
+
+        if (loaded_page == true) {
+            wrap.opacity = 0;
+            wrap.zIndex = -100;
+        }
 
         for (let i = 0; i < dataList.length; i++) {
 
