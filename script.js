@@ -75,7 +75,7 @@ function vote_One() {
     let name = document.getElementById("image1").src;
     console.log(name)
 
-    ayo = name.replace("https://www.f1draft.com/images/", "")
+    ayo = name.replace("https://www.f1draft.com/images2/", "")
 
     let name10 = ayo.replace(".jpg", "")
     insert_payload = { name: String(name10) }
@@ -121,7 +121,7 @@ function vote_Two() {
     let name = document.getElementById("image2").src;
     console.log(name)
 
-    ayo = name.replace("https://www.f1draft.com/images/", "")
+    ayo = name.replace("https://www.f1draft.com/images2/", "")
 
     let name10 = ayo.replace(".jpg", "")
     insert_payload = { name: String(name10) }
@@ -194,7 +194,7 @@ function image_src_1() {
     sstr2 = sstr1.replace("image", "")
     sstr3 = sstr2.replace(/'/g, "")
     sstr4 = sstr3.replace(" : ", "")
-    image1.src = "images/" + sstr4
+    image1.src = "images2/" + sstr4
 
     image1.onload
 
@@ -207,7 +207,7 @@ function image_src_2() {
     str2 = str1.replace("image", "")
     str3 = str2.replace(/'/g, "")
     str4 = str3.replace(" : ", "")
-    image2.src = "images/" + str4
+    image2.src = "images2/" + str4
 };
 
 // function votes_html_1() {
