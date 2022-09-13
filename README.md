@@ -7,7 +7,7 @@ JS, Axios Modules, HTML, CSS
 
 
 ## Other
-MVP will be deployed and hosted soon...
+A live deployment is now live at https://www.f1draft.com 
 
 
 *Backend can also be found on my Github Page*
