@@ -8,6 +8,7 @@ JS, Axios Modules, HTML, CSS
 
 ## Other
 A live deployment is now live at https://www.f1draft.com 
+Please go and click some buttons to show support.
 
 
 *Backend can also be found on my Github Page*
