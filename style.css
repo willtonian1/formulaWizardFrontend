@@ -139,6 +139,14 @@ p {
 
 .leaderboard_container {
     background-color: #FAF9F6;
+    padding: 5px;
+    background-color: #15151e;
+    border: 1px solid red;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #leader {
@@ -154,13 +162,36 @@ th,
 td {
     text-align: left;
     padding: 8px;
-    background-color: red;
+    background-color: #15151e;
     color: white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    text-align: center;
+    width: 50%;
+}
+
+th:first-child {
+    border-right: 1px solid white;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+td:first-child {
+    margin-top: 2px;
+}
+
+td:last-child {
+    border-right: none;
 }
 
 th {
     background-color: #15151e;
     color: white;
+    font-size: large 15px;
+    border-bottom: 1px solid red;
+    text-decoration: bold italic;
 }
 
 
@@ -265,19 +296,20 @@ th {
 
 #copy {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: white;
     top: 5px;
     fill: white;
     position: absolute;
-    top: 4px;
+    top: 7px;
     left: -20px;
 }
 
 .copy_text {
     display: inline-block;
     height: 20px;
+    font-size: 10px;
 }
 
 .home_button {
@@ -295,4 +327,9 @@ th {
     position: relative;
     top: 11px;
     right: 11px;
+}
+
+#mylink {
+    text-decoration: none;
+    color: red;
 }
