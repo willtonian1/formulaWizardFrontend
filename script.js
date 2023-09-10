@@ -341,3 +341,28 @@ function five() {
 
     }
 }
+
+
+function search() {
+    console.log(elements_List)
+    let names = []
+    for (let i = 0; i < elements_List.length; i++) {
+        nom = elements_List[i][1]
+        nom2 = nom.replace("name", "")
+        nom3 = nom2.replace(/'/g, "")
+        nom4 = nom3.replace(" : ", "")
+        names.push(nom4);
+    }
+    console.log(names); // ["Jonny"]
+
+    const input = document.getElementById('searchInput').value;
+    const results = document.getElementById('results');
+    //let matches = names.filter(item => names.toLowerCase().includes(input));
+    let matches = names.filter(item => item.includes(input))
+    if (matches.length === 0) {
+        results.innerHTML = 'No results found.';
+        return;
+    }
+
+    results.innerHTML = matches.join('<br>');
+}

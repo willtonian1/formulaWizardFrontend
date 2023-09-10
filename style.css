@@ -298,6 +298,14 @@ th {
     position: relative;
 }
 
+#insta {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 25%;
+    left: calc(50% - 30px);
+}
+
 #copy {
     display: inline-block;
     width: 15px;
@@ -336,4 +344,104 @@ th {
 #mylink {
     text-decoration: none;
     color: red;
+}
+
+
+/* Search stuff */
+
+.search-container {
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#searchInput {
+    padding: 10px 15px;
+    width: 300px;
+    background-color: grey;
+    border: 1px white;
+    margin-bottom: 5px;
+    color: white
+}
+
+#searchInput::placeholder {
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#results_holder {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#results_title {
+    font-size: 13px;
+    text-align: center;
+}
+
+#results {}
+
+.fun-fact-container {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.fun-fact-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.fun-fact-container .fact-image {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+    height: auto;
+    background-color: #e0e0e0;
+    /* Placeholder background until image is added */
+}
+
+.fun-fact-container p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+.fun-fact-container h2 {
+    font-size: 16px;
+    color: white;
+}
+
+.insta_holder {
+    width: 50px;
+    position: relative;
+    height: 100%;
+    left: calc(50% - 50px);
 }
