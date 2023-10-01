@@ -359,10 +359,36 @@ function search() {
     const results = document.getElementById('results');
     //let matches = names.filter(item => names.toLowerCase().includes(input));
     let matches = names.filter(item => item.includes(input))
+
     if (matches.length === 0) {
         results.innerHTML = 'No results found.';
         return;
+
+    } else {
+
+        // Reference to the container where buttons will be added
+        let container = document.getElementById("buttonsContainer");
+
+        // Reference to the image whose source will be changed
+        let image = document.getElementById("results_image");
+
+        // Loop through matches and create buttons
+        matches.forEach(match => {
+            // Create a button
+            let button = document.createElement("button");
+            button.innerText = match;
+
+            // Add click event listener to button
+            button.addEventListener("click", function() {
+                // Change the image source on button click
+                image.src = "images2/" + match + ".jpg";
+                image.style.display = "block"
+            });
+
+            // Append the button to the container
+            container.appendChild(button);
+        });
     }
 
-    results.innerHTML = matches.join('<br>');
+    results_image.src = matches
 }
